@@ -1,0 +1,575 @@
+@font-face {
+    font-family:'borna';
+    src: url(/borna-medium.woff);
+}
+@font-face {
+    font-family: Alpina;
+    src: url(/GT-Alpina-Condensed-Thin-Trial.otf);
+    }
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+html,body{
+width: 100%;
+height: 100%;
+}
+#nav{
+    position:absolute;
+    margin-top: 5vw;
+    height: 6vh;
+    /* background-color: #fff; */
+    z-index: 99;
+    color:white;
+    width: 100%;
+    /* Left:50%; */
+    /* transform: translate(0,-50%); */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap:90px;
+}
+#nav h6{
+    padding:0px 40px;
+    font-size: 0.7vw;
+    font-family: borna;
+    letter-spacing: 0.1vw;
+}
+#main{
+    width: 100%;
+}
+#page1{
+    height: 120vh;
+    width: 100%;
+    font-family: 'borna';
+    position:relative;
+    font-weight: -100;
+    background-color:#e5f77d;
+}
+#box{
+    height: 25vw;
+    width: 25vw;
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    /* background-color: aqua; */
+}
+#box img{
+    height: 100%;
+    width: 100%;
+    object-position: center;
+}
+#first{
+    position:absolute;
+    z-index: 99;
+    font-size: 9vw;
+    letter-spacing: -0.55vw;
+    font-weight: 100;
+    padding-top: 8.5vw;
+    margin-left: 25vw;
+    backface-visibility: visible;
+    color:#000;
+}
+#second{
+    position:absolute;
+    /* mix-blend-mode: color-burn; */
+    font-size: 9vw;
+    z-index: 99;
+    letter-spacing: -0.55vw;
+    font-weight: 200;
+     margin-top: 24vw;
+    margin-left: 54vw; 
+}
+#third{
+    position:absolute;
+    z-index: 99;
+    /* mix-blend-mode: color-burn; */
+    font-size: 9vw;
+    letter-spacing: -0.55vw;
+    font-weight: 200;
+     margin-top: 43vw;
+    margin-left:20vw; 
+}
+#page1 h2{
+    font-size: 1.5vw;
+    font-family: cursive;
+    color:white;
+    position:relative;
+    z-index: 99;
+    padding-top: 53vw;
+    margin-left: 34vw;
+}
+#page2{
+    height: 220vh;
+    width: 100%;
+    background-color: #e5f77d;
+    font-family: 'borna';
+    
+}
+#page2 h1{
+    font-size: 7.5vw;
+    font-weight: 10;
+    padding-top: 6vw;
+    margin-left: 4vw;
+    line-height: 7.8vw;
+    letter-spacing: -0.35vw;
+}
+#page2 img{
+    height: 120vh;
+    width: 70%;
+    margin-top: 12vw;
+    overscroll-behavior-y: none;
+    background-color: aqua;
+    /* object-fit: cover; */
+    object-position: center;
+}
+#page2 h5{
+    font-size: 1.7vw;
+    color:black;
+    font-family: cursive;
+    font-weight: 100;
+    margin-left: 71vw;
+    margin-top: -68vw;
+}
+#page2 p{
+    font-size:1.4vw ;
+    margin-top: 3vw;
+    margin-left: 71vw;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+#page2 button{
+    font-size: 1vw;
+    padding:20px 120px;
+    margin-left: 71vw;
+    margin-top: 3vw;
+    border-radius: 3px;
+    border:none;
+    color:#000;
+    background-color: #fff;
+    transition:all ease 0.5s;
+}
+#page2 button:hover{
+    color: #fff;
+    background-color: #000;
+}
+#page3{
+    height: 160vh;
+    width: 100%;
+}
+#page3 h1{
+    font-size: 6.5vw;
+    font-weight: 10;
+    padding-top: 6vw;
+    margin-left: 4vw;
+    line-height: 7.8vw;
+    letter-spacing: -0.35vw;
+}
+#box2{
+    height: 37vw;
+    width: 100%;
+    /* background-color: aqua; */
+    padding-left: 1.8%;
+    margin-top: 10vw;
+    display: flex;
+}
+.elem img{
+    height:13vw;
+    width: 13vw;
+    object-fit: cover;
+    margin-left: 2.5vw;
+    transition:all ease 1s;
+}
+.elem h2{
+    font-size: 1.2vw;
+    font-weight: 500;
+    margin-top: 1vw;
+    margin-left: 2.5vw;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.elem p{
+    font-size: 1.2vw;
+    font-weight: 500;
+    margin-top: 1vw;
+    color:#545252;
+    margin-left: 2.5vw;
+}
+.elem1 img{
+    height:19vw;
+    width: 13vw;
+    object-fit: cover;
+    margin-left: 2.5vw;
+}
+.elem1 h2{
+    font-size: 1.2vw;
+    font-weight: 500;
+    margin-top: 1vw;
+    margin-left: 2.5vw;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.elem1 p{
+    font-size: 1.2vw;
+    font-weight: 500;
+    margin-top: 1vw;
+    margin-left: 2.5vw;
+    color:#545252;
+}
+#page3 button{
+    font-size: 1vw;
+    padding:20px 100px;
+    margin-left: 4vw;
+    margin-top: 3vw;
+    border-radius: 3px;
+    border:none;
+    color:#fff;
+    background-color: #000;
+    transition:all ease 0.5s;
+}
+#page3 button:hover{
+    color: #000;
+    background-color: #fff;
+}
+#page4{
+    height: 160vh;
+    width: 100%;
+    position:relative;
+    /* background-color: #e5f77d; */
+    /* font-family: 'borna'; */
+    
+}
+#page4 #t1{
+    font-size: 5.5vw;
+    font-weight: 10;
+    padding-top: 4vw;
+    margin-left: 3vw;
+    line-height: 7.8vw;
+    letter-spacing: -0.15vw;
+}
+#First{
+    height: 105vh;
+    width: 65%;
+    margin-top: 5vw;   
+    overscroll-behavior-y: none;
+    background-color: aqua;
+    object-fit: cover;
+    object-position: center;
+}
+.division{
+    height: 15vw;
+    width: 30%;
+    /* background-color: aqua; */
+    border-top: 1px solid black;
+    margin-left: 69vw;
+    margin-top: -59vw;
+}
+.division #a{
+    height: 10vh;
+    width: 7vw;
+    margin-top: 4.3vw;
+    object-fit: cover;
+    margin-left: 2vw;
+}
+#t2{
+    font-size: 1.1vw;
+    margin-left: 10vw;
+    margin-top: -3vw;
+}
+#page4 h2{
+    font-size: 1.2vw;
+    font-weight: 400;
+    margin-left: 10vw;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}#division{
+    height: 15vw;
+    width: 30%;
+    /* background-color: aqua; */
+    border-top: 1px solid black;
+     margin-left: 69vw;
+     margin-top: 0vw; 
+}
+#division #a1{
+    height: 10vh;
+    width: 7vw;
+    object-fit: cover;
+    margin-left: 2vw;
+    margin-top: 4.3vw;
+}
+#division #a2{
+    height: 10vh;
+    width: 7vw;
+    object-fit: cover;
+    margin-left: 2vw;
+    margin-top: 4.3vw;
+}
+#division #a3{
+    height: 10vh;
+    width: 7vw;
+    object-fit: cover;
+    margin-left: 2vw;
+    margin-top: 4.3vw;
+}
+#page5{
+    height: 110vh;
+    width: 100%;
+    background-color: #e5f77d;
+    /* position:relative; */
+}
+#pg5{
+    height: 100%;
+    width: 47%;
+    object-fit: cover;
+}
+#e1{
+    font-family: Alpina;
+    font-size: 3.5vw;
+    /* background-color: aquamarine; */
+    font-weight: 100;
+    padding-left: 50vw;
+    margin-top: -60vw;
+    display: block;
+}
+#e2{
+    font-family: Alpina;
+    font-size: 3.5vw;
+    font-weight: 100;
+    padding-left: 50vw;
+    opacity:0.1;
+    display: block;
+    /* margin-top: -60vw; */
+}
+#e3{
+    font-family: Alpina;
+    font-size: 3.5vw;
+    font-weight: 100;
+    padding-left: 50vw;
+    opacity:0.1;
+    display: block;
+    /* margin-top: -60vw; */
+}
+#e4{
+    font-family: Alpina;
+    font-size: 3.5vw;
+    font-weight: 100;
+    padding-left: 50vw;
+    opacity:0.1;
+    display: block;
+}
+#e5{
+    font-family: Alpina;
+    font-size: 3.5vw;
+    font-weight: 100;
+    padding-left: 50vw;
+    opacity:0.1;
+    display: block;
+}
+#e6{
+    font-family: Alpina;
+    font-size: 3.5vw;
+    font-weight: 100;
+    padding-left: 50vw;
+    opacity:0.1;
+    display: block;
+}
+#f1 {
+    font-size: 1.6vw;
+    font-family: cursive;
+    padding-left: 73vw;
+    font-weight: 100;
+    margin-top: 3vw;
+}
+#page5 p{
+    font-size: 1.2vw;
+    padding-left: 73vw;
+    margin-top: 2vw;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+#page5 button{
+    font-size: 1vw;
+    padding:20px 100px;
+    margin-left: 73vw;
+    margin-top: 3vw;
+    border-radius: 3px;
+    border:none;
+    color:#fff;
+    background-color: #000;
+    transition:all ease 0.5s;
+}
+#page5 button:hover{
+    color: #000;
+    background-color: #fff;
+}
+#page6{
+    height: 290vh;
+    width: 100%;
+}
+#page6 h1{
+    font-size: 7vw;
+    font-family: Alpina;
+    font-weight: 100;
+    line-height: 6vw;
+    padding-top: 5vw;
+    margin-left: 3vw;
+}
+#twin{
+    height: 85vh;
+    width: 100%;
+    margin-top: 10vw;
+    display:flex;
+    justify-content: space-between;
+}
+#pa{
+    height: 100%;
+    width: 48%;
+    display: flex;
+    justify-content: end;
+    transition:all ease 2s;
+}
+#pa img{
+    height: 50%;
+    width: 50%;
+    object-fit: cover;
+}
+#texta{
+    font-size: 2vw;
+    margin-left: 9vw;
+    margin-top: 2vw;
+    opacity: 0;
+    font-weight: 500;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+#textb{
+    font-size: 2vw;
+    margin-left: 60vw;
+    margin-top: -3vw;
+    font-weight: 500;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+#pb{
+    height: 100%;
+    width: 48%;
+    transition:all ease 2s;
+}
+#pb img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+#pg6{
+    height: 43vw;
+    width: 40vw;
+    object-fit: cover;
+    margin-top: 10vw;
+}
+#textc{
+    font-size: 5vw;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 400;
+    margin-left: 47vw;
+    margin-top: -45vw;
+    line-height: 4.5vw;
+}
+#page6 p{
+    font-size: 1.2vw;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin-left: 48vw;
+    margin-top: 2vw;
+}
+#page6 button{
+    font-size: 1vw;
+    padding:20px 100px;
+    margin-left: 48vw;
+    margin-top: 3vw;
+    border-radius: 3px;
+    border:none;
+    color:#fff;
+    background-color: #000;
+    transition:all ease 0.5s;
+}
+#page6 button:hover{
+    color: #000;
+    background-color: #fff;
+}
+#page7{
+    height: 180vh;
+    width: 100%;
+    background-color: #353535;
+}
+#page7 h1{
+    font-size: 9vw;
+    font-family: Alpina;
+    padding-top: 9vw;
+    color:white;
+    margin-left: 5vw;
+    line-height: 9vw;
+}
+#page7 button{
+    font-size: 1vw;
+    padding:20px 100px;
+    margin-left: 8vw;
+    margin-top: 8vw;
+    border-radius: 3px;
+    border:none;
+    color: #000;
+    background-color: #fff;
+    transition:all ease 0.5s;
+}
+#pg7box{
+    height: 25vw;
+    margin-top: 10vw;
+    width: 100%;
+    /* background-color:aqua; */
+    display: flex;
+    align-items: center;
+    /* padding:0vw 6vw; */
+    justify-content: center;
+    gap:1vw;
+}
+#pg7a{
+    height: 14.58vw;
+    width: 14.58vw;
+    object-fit: cover;
+}
+#pg7b{
+    height: 14.58vw;
+    width: 14.58vw;
+    object-fit: cover;
+}
+#pg7c{
+    height: 14.58vw;
+    width: 14.58vw;
+    object-fit: cover;
+}
+#pg7d{
+    height: 14.58vw;
+    width: 14.58vw;
+    object-fit: cover;
+}
+#pg7e{
+    height: 14.58vw;
+    width: 14.58vw;
+    object-fit: cover;
+}
+#pg7f{
+    height: 14.58vw;
+    width: 14.58vw;
+    object-fit: cover;
+}
+#last{
+    height: 5vw;
+    width: 100%;
+    /* background-color: #e5f77d; */
+    margin-top: 10vw;
+    /* padding-top: 4vw; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap:3vw;
+}
+#last h2{
+    font-size: 1.3vw;
+    color:white;
+    font-weight: 400;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
